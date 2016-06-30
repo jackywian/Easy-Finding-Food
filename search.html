@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>EzFiFoMedan</title>
+	<script src="angular.js"></script>
+	<script src="ngStorage.js"></script>
+	<script src="item.js"></script>
+	<link rel="stylesheet" href="search.css">
+</head>
+<body ng-controller="ctrl">
+	<div class="container">
+		<div class="container1">
+			<div class="awal">
+				<p>Data Makanan yang di cari : </p>
+				<ul ng-repeat="item in $storage.data | filter:$storage.b[0] | filter:$storage.search">
+					<a href="{{item.url}}" target="_blank"><ul class="kotak">
+					<li>{{item.jalan}}</li>
+					<li>{{item.nama}}</li>
+					<li>{{item.jenis}}</li>
+				</ul></ul></a>
+			</div>
+			
+			<div class="a">
+				<p></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

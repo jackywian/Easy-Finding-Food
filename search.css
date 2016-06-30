@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	background: url('picture/background-search.jpg') fixed no-repeat;
+	background-size: 100%;
+	width: 100%;
+}
+li,a{
+	list-style: none;
+	text-decoration: none;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.container1{
+	background-image: url('picture/background.png');
+	margin: 0 auto;
+	width: 960px;
+	border-radius: 3px;
+	float: left;
+	padding-bottom: 10px;
+}
+ul{
+	float: left;
+	margin: 0; padding: 0;
+	margin: 0 0 20px 32px;
+	color: black;
+}
+ul.kotak{
+	width: 400px;
+	background: white;
+	border-radius: 3px;
+	float: left;
+	margin: 0; padding: 0;
+	padding: 12px;
+}
+li{
+	padding: 2px;
+	margin: 0;
+	font-size: 19px;
+}
+p{
+	padding: 30px;
+	font-size: 20px;
+	border-bottom: 2px solid red;
+}
+.awal ul.kotak:hover{
+	box-shadow: 2px 2px 5px;
+}
+.a,.awal{
+	float: left;
+}
+.a{
+	width: 100%;
+}
+.a p{
+	padding: 0px;
+}
+

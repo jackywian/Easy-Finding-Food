@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>EzFiFoMedan</title>
+	<script src="../angular.js"></script>
+	<script src="../ngStorage.js"></script>
+	<script src="ubah.js"></script>
+	<link rel="stylesheet" href="ubah.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body ng-controller="ctrl">
+	<div class="container">
+		<div class="ubah">
+			<div class="header">
+				<h3>Kekurangan atau Kesalahan untuk Info Makanan</h3>
+				<p>* Jika ada kekurangan atau kesalahan pada info yang kami berikan. 
+					Bisa diberitahukan kepada kami dengan mengisi data dibawah ini</p>
+			</div>
+			
+			<div class="isi">
+				<div class="form-group">
+				<label class="control-label col-sm-3">Nama Khas :</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" ng-model ="$storage.abc.khas" placeholder="Indonesia / Chinese / Japanese / Western">
+					</div>
+				</div>
+			</div>
+			<div class="isi">
+				<div class="form-group">
+					<label class="control-label col-sm-3">Jenis Makanan :</label>
+						<div class="col-sm-9">
+							<input type="text" ng-model ="$storage.abc.jenis" class="form-control" placeholder="Nasi / Mie , dll">
+						</div>
+				</div>
+			</div>
+			<div class="isi">
+				<div class="form-group">
+					<label class="control-label col-sm-3">Nama Makanan :</label>
+						<div class="col-sm-9">          
+							<input type="text" ng-model = "$storage.abc.nama" class="form-control" placeholder="Nama Makanan">
+						</div>
+				</div>
+			</div>
+			<div class="isi">
+				<div class="form-group">
+					<label class="control-label col-sm-3">Commentar :</label>
+						<div class="col-sm-9">          
+							<textarea class="form-control" rows="8" ng-model = "$storage.abc.komentar" placeholder="Kekurangan atau kesalahan pada info makanan"></textarea>
+						</div>
+				</div>
+			</div>
+			<div class="click">
+					<a href="kesalahan.html"><button type="button" ng-click="click()" class="btn btn-info">Kirim</button></a>
+			</div>
+</body>
+</html>

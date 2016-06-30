@@ -1,0 +1,43 @@
+body{
+	background: url('../picture/background.jpg')no-repeat fixed;
+	background-size: 100%;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+.ubah{
+	width: 960px;
+	margin: 0 auto;
+	margin-top:20px; 	
+	height: 540px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 7px 10px 8px;
+}
+.header{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.header h3{
+	margin: 0px;
+	padding: 12px 12px 12px 15px;
+}
+.header p{
+	margin: 0;
+	padding: 0;
+	padding-left: 13px;
+	padding-bottom: 10px; 
+}
+
+.isi,.click{
+	margin-top: 15px;
+	float: left;
+	width: 900px;
+}
+.click{
+	text-align: right;
+}
+label{
+	margin-top: 6px;
+}

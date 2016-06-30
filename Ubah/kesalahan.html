@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>EzFiFoMedan</title>
+	<script src="../angular.js"></script>
+	<script src="../ngStorage.js"></script>
+	<script src="ubah.js"></script>
+	<link rel="stylesheet" href="kesalahan.css">
+</head>
+<body ng-controller="ctrl">
+	<div class="container">
+		<div class="container1">
+			<div class="awal">
+				<p>Kesalahan pada info makanan : </p>
+				<div class="ubah" ng-repeat="item in tampung">
+					<div class="aa">
+						<div class="move">
+							<p>Nama Khas : {{$storage.kesalahan[item].khas}}</p>
+							<p>Jenis Makanan : {{$storage.kesalahan[item].jenis}}</p>
+							<p>Nama Makanan : {{$storage.kesalahan[item].nama}}</p>
+							<p>Komentar : {{$storage.kesalahan[item].komentar}}</p>
+						</div>		
+					</div>
+				</div>
+			</div>
+			
+			<div class="a">
+				<p></p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
