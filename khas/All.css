@@ -1,0 +1,187 @@
+body{
+	margin: 0px auto;
+	height: 100%;
+	width: 100%;
+	letter-spacing: 1px;
+	background: no-repeat;
+	background-size: 100%;    
+	background-attachment: fixed;
+	font-family: "Rockwell Std",serif;
+}
+
+.awal{
+	width: 100%;
+	position: fixed;
+	background: #e5e5e5;
+	height: 45px;
+	margin: 0px auto;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.awal a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	color: #000;
+}
+.awal a:hover{
+	color: lightskyblue;
+	transition: all 0.3s ease 0s;
+}
+.awal .Home{
+	font-family: 'Times New Roman', Times, serif;
+	padding: 6px 9px 10px 20px;
+	font-weight: bold;
+}
+#middle{
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+.Home{
+	float: left;
+	color: red;
+	width: 61px;
+	height: 10px;
+}
+li,a{
+	text-decoration: none;
+	list-style: none;
+}
+
+.search{
+	margin-top: 3.5px;
+	width: 850px;
+	float: left;
+}
+.search1{
+	float: left;
+	text-align: center;
+	margin-left: 160px;	
+}
+#searchinput{
+	width: 450px;
+	height: 35px;
+	border: none;
+	font-size: 10pt;
+	padding-left: 25px;
+	border-radius: 5px 0px 0px 5px;
+	color: black;
+}
+#searchinput:hover{
+	background-color: lightskyblue;
+	color: black;
+	transition: all 0.8s ease 0s;
+}
+.click{
+	float: right;
+	border: none;
+	padding: 2px 20px 7px 20px;
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 0px 5px 5px 0px;
+	background: lightskyblue;
+}
+input.click:hover{
+	color: white;
+	background-color: black;
+	transition: all 0.8s ease 0s;
+}
+.tengah{
+	width: 860px;
+	margin: 0px auto;
+}
+.center{
+	float: left;
+	margin: 0 auto;
+	margin-top: 45px;	
+	width: 843px;
+	border-radius: 2px;
+	background: url('picture/background.png');
+	border-right:  3px solid #E5E5E5;
+	border-left:  3px solid #E5E5E5;
+}
+#Harga{
+	width:840px;
+	height: 35px;
+	border-bottom: 2px solid #e5e5e5;
+	margin: auto;
+}
+#Harga{
+	margin-bottom: 30px;
+}
+
+#item{
+	float: left;
+	margin: 0 auto;
+}
+.K1,.item1,p{
+	margin: 0px;padding: 0px;
+}
+.K1 li{
+	float: left;
+	padding: 8px 8px;
+}
+.Makanan{
+	width: 845px;
+	min-height: 538px;
+	float: left;
+	padding-bottom: 20px;
+}
+.Makanan li{
+	margin: 0px; 
+	background: white;
+	border-radius: 3px;
+}
+.Makanan1 li{
+	border-top: 3px solid #e5e5e5;
+	border-bottom:  3px solid #e5e5e5;
+	padding: 18px 0px 4px 14px;
+	padding-bottom: 20px;
+	background: none;	
+	font-size: 17px;
+	font-weight: bold;
+	color: orangered;
+}
+.Makanan2 li{
+	float: left;
+	width: 392px;
+	margin: 10px 0 0 20px;
+}
+.Makanan2 img, .Minuman2 img{
+	padding: 5px 5px;
+	float: left;
+}
+
+#footer{
+	background: #e5e5e5;
+	width: 100%;
+	float: left;
+} 
+.tampilan-awal{
+	padding: 10px 0px;
+	margin-left: 20px;
+}
+
+.Makanan2 li:hover{
+	box-shadow: 1px 1px 7px black;
+	transition: all 0.3s ease;
+}
+.Makanan2 li:active{
+	background: #404040;
+}
+.info{
+	float: left;
+	width: 300px;
+	margin-top: 2px;
+	margin-left: 12px;
+	color: #404040;
+}
+.info p{
+	padding: 3.5px 0px;
+	font-size: 13px;
+}
+.info p.namaitem{
+	font-size: 15px;
+	font-weight: bold;
+	color: #404040;
+}

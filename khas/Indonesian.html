@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>EzFiFoMedan</title>
+	<script src="../angular.js"></script>
+	<script src="indonesia.js"></script>
+	<link rel="stylesheet" href="All.css">
+</head>
+<body ng-controller="ctrl" style="background-image:url(picture/background-indo.jpg)">
+<div id="middle">
+	<div class="awal">
+		<div class="Home">
+			<img src="../picture/sublogo-indonesian.png" alt="" width="160" height="30">
+		</div>
+		
+		<div class="search">
+			<div class="search1">
+				<input ng-model="search" type="search" id="searchinput" placeholder="Search..."/>
+				<input class="click" type="submit" value="&#8250;" title="Search..."/>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tengah">
+		<div class="center">
+			
+			<div id="item">
+				<ul class="item1">
+					<div class="Makanan1">
+						<li>Makanan - Makanan Indonesia</li>
+					</div>
+					<div class="Makanan">
+						<div class="Makanan2">
+							<div ng-repeat="dataa in data | filter:search">
+							<a href="{{dataa.url}}"><li>
+								<div class="gambar-item"><img src="{{dataa.img}}" alt="" width="70" height="70"></div>
+								<div class="info">
+									<p class="namaitem">{{dataa.nama}}</p>
+									<p>{{dataa.jalan}}</p>
+									<p>Jenis : {{dataa.jenis}}</p>
+								</div>
+							</li></a>
+							</div>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div id="footer">
+		<div class="tampilan-awal">
+			<a href="../Homepage.html">Home</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
