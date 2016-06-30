@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<link href="picture/icon.ico" rel="icon" type="image/x-icon">
+	<title>EzFiFoMedan</title>
+	<script src="angular.js"></script>
+	<script src="ngStorage.js"></script>
+	<script src="item.js"></script>
+	<link rel="stylesheet" href="Homepage.css">
+</head>
+<body ng-controller="ctrl">
+	<div class="container1">
+		<div class="container">
+			<div class="awal">
+			</div>
+		
+			<div class="tengah">
+				<div class = "left">
+					<div class="gambar">
+						<img src="picture/maskot.png" alt="" width="120" height="110" title="HOME">
+					</div>
+					<div class="khas">
+						<ul class="ul1">
+							<li><a href="khas/Western.html">Western</a></li>
+							<li><a href="khas/Chinese.html">Chinese</a></li>
+							<li><a href="khas/Japanese.html">Japanese</a></li>
+							<li><a href="khas/Indonesian.html">Indonesian</a></li>
+							<li><a href="khas/Lain.html">Lain-Lain</a></li>
+							<li><a href="panduan/panduan.html" class="ubah">Panduan</a></li>
+							<li><a href="Ubah/ubah.html">Ubah</a></li>
+					</div>
+				</div>
+				
+				<div class="right">
+					<div class="right1">
+						<div class="header">
+							<img src="picture/a.png" alt="" width="230" height="200">
+						</div>
+						
+						<div class="search" >
+							<div class="search1">
+								<p class="judulkecil"><b>Easy Finding Food Medan</b></p>
+								<img src="picture/images.png" alt="" height="40">
+								<input type="search" id="searchinput" placeholder="Search..." ng-model="$storage.x">
+								<a href="search.html" target="_blank"><input ng-disabled="$storage.x == ''" ng-click="click()" class="click" type="submit" value="&#8250;" title="Search..."></a>
+							</div>
+						</div>
+					
+						<div class="drop">
+							<div class="drop-down">
+								<ul class="ul-dropdown">
+									<li class="li-dropdown"><a id="dd" href="" ng-click="showdtl()">{{list}}<i class="arrow"></i></a>
+										<ul class="ul2" ng-show="show" >
+											<li><a href=""  ng-click="setaction(items)" ng-repeat="items in item">{{items}}</a></li>
+										</ul>
+									</li>
+									<li class="li-dropdown"><a id="dd" href="" ng-click="showdtl1()">{{harga}} <i class="arrow"></i></a>
+										<ul id="da" class="ul2" ng-show="show1">
+											<li><a href="" ng-click="setaction1(item)" ng-repeat="item in item1">{{item}}</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
