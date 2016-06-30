@@ -1,0 +1,181 @@
+body{
+	width: 100%;
+	background: no-repeat fixed;
+	background-size: 105%;
+}
+body, #awal,.container{
+	margin: 0 auto;
+}
+.container{
+	background: red;
+	width: 960px;
+	height: 100%;
+}
+#awal{
+	float: left;
+	width: 960px;
+	background:url('../picture/background.png');
+}
+.Home{
+	height: 20px;
+	padding: 15px 0 15px 20px;
+	border-bottom: 2px solid #e5e5e5;
+	font-weight: bold;
+}
+.item .gambar-item{
+	width: 345px; height: 330px;
+	float: left;
+	background-color: red;
+}
+.item .gambar-item img{
+	width: 360px; height: 330px;
+}
+.item,.isi-Menu{
+	width: 930px;
+	margin: 15px 15px 0 15px;
+	border: 2px solid #e5e5e5;
+	float: left;
+}
+.item .infoitem{
+	width: 570px; height: 330px;
+	background: #f8f8f8;
+	float: left;
+	margin-left: 15px;
+}
+
+.ul-info,.isi-info{
+	float: left;
+	width: 210px;
+	margin: 0; padding: 0;
+}
+li,a{
+	list-style: none;
+	text-decoration: none;	
+}
+.ul-info li, .isi-info li{
+	font-size: 18px;
+	padding: 10px 5px 5px 5px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	border-top: 2px solid #e5e5e5;
+}
+.isi-info li{
+	width: 325px;
+	padding-left: 17px;
+	margin-left: 0px;
+}
+.a-info{
+	width: 3px;
+	float: left;
+	margin: 0; padding: 0;
+}
+.a-info li{
+	padding: 12px 0px 5px 0px;
+	border-top: 2px solid #e5e5e5;
+	margin-bottom: 15px;
+}
+li.atas{
+	border-top: none;
+}
+#Menu{
+	float: left;
+}
+.isi-Menu{
+	margin-top: 0px;
+	padding-bottom: 10px;
+	background:#ccc;
+}
+.isi-Menu p{
+	margin: 0; padding: 0;
+	font-size: 20px;
+	margin: 10px 0 10px 10px;
+	font-weight: bold;	
+}
+.Menu-Makanan{
+	background: rgba(0,0,0,0.2);
+	width: 450px;
+	margin-left: 9.5px;
+	float: left;
+	border-radius: 5px;
+}
+.Menu-Makanan li{
+	padding: 5px;
+}
+.Menu-Makanan li a{
+	color: white;
+	margin-left: 20px;	
+}
+li a:hover{
+	box-shadow: 2px 2px 6px;
+	color: black;
+	margin-left: 21px;	
+}
+#item{
+	float: left;
+	margin: 0 auto;
+}
+.Makanan{
+	min-height: 538px;
+	float: left;
+	padding-bottom: 20px;
+}
+.Makanan li{
+	margin: 0px; 
+	background: white;
+	border-radius: 3px;
+}
+.item1{
+	margin: 0;
+	padding: 0;
+}
+.Makanan1 li{
+	background: red;
+	border-top: 3px solid #e5e5e5;
+	border-bottom:  3px solid #e5e5e5;
+	padding: 18px 0px 4px 14px;
+	padding-bottom: 20px;
+	background: none;	
+	font-size: 17px;
+	font-weight: bold;
+	color: orangered;
+}
+.Makanan2 li{
+	float: left;
+	width: 430px;
+	margin: 10px 0 0 23px;
+}
+.Makanan2 img, .Minuman2 img{
+	margin-top: 9px;
+	padding: 5px 5px;
+	float: left;
+}
+.Makanan2 li:hover{
+	box-shadow: 1px 1px 7px black;
+	transition: all 0.3s ease;
+}
+.Makanan2 li:active{
+	background: #404040;
+}
+.info{
+	float: left;
+	width: 300px;
+	margin-top: 2px;
+	margin-left: 12px;
+	color: #404040;
+}
+.info p{
+	margin: 0;
+	padding: 3.5px 0px;
+	font-size: 13px;
+}
+.info p.namaitem{
+	font-size: 15px;
+	font-weight: bold;
+	color: #404040;
+}
+.footer{
+	float: left;
+	width: 940px;
+	padding: 10px;
+	background: #e5e5e5;
+}
