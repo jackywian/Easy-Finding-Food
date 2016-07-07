@@ -1,0 +1,6 @@
+div.gambar{
+	background: no-repeat;
+	background-image: url(../../picture/sublogo-indonesian.png);
+	background-size: 220px;
+	height: 35px;
+}
