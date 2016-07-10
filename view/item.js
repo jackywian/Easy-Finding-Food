@@ -1,8 +1,8 @@
 var app = angular.module('app', ['ngStorage'])
 app.controller('ctrl', function($scope,$localStorage){
         //search
+
         $scope.$storage = $localStorage.$default({x:'', b:[], search:{}, data:[]});
-        
         $scope.delete = function(){
                 delete $scope.$storage.x;
         }
@@ -145,10 +145,9 @@ app.controller('ctrl', function($scope,$localStorage){
                 $scope.show1 = false;
         }
         //
-        
         //tampilan & data
         $scope.hide = false;
-        $scope.chinese = [
+        $scope.chinese = [ //scope.chinese seharusnya merupakan jenis khas makanan.
                 //Chinese - Cambridge : 5
                 {
                         tempat:'Old Town White Coffee',
@@ -157,14 +156,16 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Mie',
                         jalan:'Cambridge City Square GF G09 & G22, Jln. S.Parman No. 217',
-                        url:'item/chinese-item/makanan/OldTown_CurryHor.html',
+                        url:'/curhf',
                 },
                 {
                         tempat:'Old Town White Coffee',
-                        nama:'Rendang Chicken Rice',
-                        jenis:'Nasi',
-                        jalan:'Cambridge City Square GF',
-                        url:'../item/chinese-item/makanan/OldTown_RendangChicken.html',
+                        nama:'Ipoh Chicken Hor Fun',
+                        harga:'45.000',
+                        khas : 'Chinese',
+                        jenis:'Mie',
+                        jalan:'Cambridge City Square GF G09 & G22, Jln. S.Parman No. 217',
+                        url:'/ipoc',
                 },
                 {
                         tempat:'Old Town White Coffee',
@@ -173,7 +174,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Mie',
                         jalan:'Cambridge City Square GF G09 & G22, Jln. S.Parman No. 217',
-                        url:'item/chinese-item/makanan/OldTown_AsamLaksa.html',
+                        url:'/asal',
                 },
                 {
                         tempat:'Old Town White Coffee',
@@ -182,7 +183,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Mie',
                         jalan:'Cambridge City Square GF G09 & G22, Jln. S.Parman No. 217',
-                        url:'item/chinese-item/makanan/OldTown_PrawnMeehoon.html',
+                        url:'/pramh',
                 },
                 {
                         tempat:'Old Town White Coffee',
@@ -191,7 +192,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Nasi',
                         jalan:'Cambridge City Square GF G09 & G22, Jln. S.Parman No. 217',
-                        url:'item/chinese-item/makanan/OldTown_RendangChicken.html',
+                        url:'renc',
                 },
                 {
                         tempat:'Old Town White Coffee',
@@ -200,7 +201,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Nasi',
                         jalan:'Cambridge City Square GF G09 & G22, Jln. S.Parman No. 217',
-                        url:'item/chinese-item/makanan/OldTown_NasiLemak.html',
+                        url:'/onasl',
                 },
                 
                 //Chinese - Raden : 2, Indonesian - Raden : 1
@@ -211,7 +212,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Tahu',
                         jalan:'Jl. Taruma, Medan Petisah',
-                        url:'item/chinese-item/makanan/Raden_MapoTahu.html',
+                        url:'/mapt',
                 },
                 {
                         tempat:"Raden's Steak",
@@ -220,7 +221,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Mie',
                         jalan:'Jl. Taruma, Medan Petisah',
-                        url:'item/chinese-item/makanan/Raden_MieSiram.html',
+                        url:'/mies',
                 },
                 {
                         tempat:"Raden's Steak",
@@ -229,7 +230,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Indonesian',
                         jenis:'Steak',
                         jalan:'Jl. Taruma, Medan Petisah',
-                        url:'item/indonesia-item/makanan/Raden_SteakAyam.html',
+                        url:'/stea',
                 },
                 
                 //The Spring Cafe & Resto
@@ -241,7 +242,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Mie',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/chinese-item/makanan/springcafe_BinjaiChar.html',
+                        url:'/binc',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -250,8 +251,8 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Chinese',
                         jenis:'Mie',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/chinese-item/makanan/springcafe_CharKwetiau.html',
-                },
+                        url:'/chak',
+                },  
                 //indonesian : 7
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -260,7 +261,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Indonesia',
                         jenis:'Mie',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/indonesia-item/makanan/springcafe_IndomieGoreng.html',
+                        url:'/indg',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -269,7 +270,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Indonesia',
                         jenis:'Nasi',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/indonesia-item/makanan/springcafe_PattayaFried.html',
+                        url:'/patf',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -278,7 +279,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Indonesia',
                         jenis:'Nasi',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/indonesia-item/makanan/springcafe_BeefFried.html',
+                        url:'/beef',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -287,7 +288,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Indonesia',
                         jenis:'Nasi',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/indonesia-item/makanan/springcafe_NasiLemak.html',
+                        url:'/snasl',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -296,7 +297,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Indonesia',
                         jenis:'Nasi',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/indonesia-item/makanan/springcafe_NasiBistikAyam.html',
+                        url:'/nasba',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -305,7 +306,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Indonesia',
                         jenis:'Nasi',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/indonesia-item/makanan/springcafe_NasiAyamSaus.html',
+                        url:'/nasas',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -314,7 +315,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Indonesia',
                         jenis:'Nasi',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/indonesia-item/makanan/springcafe_TheSpring.html',
+                        url:'/thes',
                 },
                 //western : 8
                 {
@@ -324,7 +325,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Western',
                         jenis:'Pizza',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/western-item/makanan/springcafe_BarbarianPizza.html',
+                        url:'/barp',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -333,7 +334,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Western',
                         jenis:'Salad',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/western-item/makanan/springcafe_CaesarSalad.html',
+                        url:'/caes',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -342,7 +343,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Western',
                         jenis:'Steak',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/western-item/makanan/springcafe_ChickenGordon.html',
+                        url:'/chig',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -351,7 +352,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Western',
                         jenis:'Steak',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/western-item/makanan/springcafe_GrillChicken.html',
+                        url:'/spgric',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -360,7 +361,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Western',
                         jenis:'Steak',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/western-item/makanan/springcafe_GrillSalmonofBBQ.html',
+                        url:'/grisb',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -369,7 +370,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Western',
                         jenis:'Steak',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/western-item/makanan/springcafe_GrillSalmonofJalambalaya.html',
+                        url:'grisj',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -378,7 +379,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Western',
                         jenis:'Pasta',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/western-item/makanan/springcafe_Macaroni.html',
+                        url:'/mac',
                 },
                 {
                         tempat:"The Spring Cafe & Resto",
@@ -387,7 +388,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Western',
                         jenis:'Pasta',
                         jalan:'Jln. MH Thamrin no.75 R, Thamrin Plaza 7th Floor',
-                        url:'item/western-item/makanan/springcafe_Spaghetti.html',
+                        url:'/spa',
                 },
                 
                 //Dr's Sushi
@@ -399,7 +400,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Nasi',
                         jalan:'Jl. Letjen S Parman No. 308, Medan',
-                        url:'item/japanese-item/makanan/DrsSushi_ChickenKatsuCurryRice.html',
+                        url:'/chikcr',
                 },
                 {
                         tempat:"Dr's Sushi",
@@ -408,7 +409,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Sukiyaki',
                         jalan:'Jl. Letjen S Parman No. 308, Medan',
-                        url:'item/japanese-item/makanan/DrsSushi_SukiyakiNabe.html',
+                        url:'/sukn',
                 },
                 {
                         tempat:"Dr's Sushi",
@@ -417,7 +418,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Karaage',
                         jalan:'Jl. Letjen S Parman No. 308, Medan',
-                        url:'item/japanese-item/makanan/DrsSushi_SpicyToriKaraage.html',
+                        url:'/spitk',
                 },
                 {
                         tempat:"Dr's Sushi",
@@ -426,7 +427,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Ramen',
                         jalan:'Jl. Letjen S Parman No. 308, Medan',
-                        url:'item/japanese-item/makanan/DrsSushi_MisoRamen.html',
+                        url:'/misr',
                 },
                 {
                         tempat:"Dr's Sushi",
@@ -435,7 +436,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Sushi',
                         jalan:'Jl. Letjen S Parman No. 308, Medan',
-                        url:'item/japanese-item/makanan/DrsSushi_DrSushiSashimiSet.html',
+                        url:'/susss',
                 },
                 {
                         tempat:"Dr's Sushi",
@@ -444,7 +445,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Sushi',
                         jalan:'Jl. Letjen S Parman No. 308, Medan',
-                        url:'item/japanese-item/makanan/DrsSushi_DrSushiVolcanoRoll.html',
+                        url:'/volr',
                 },
                 {
                         tempat:"Dr's Sushi",
@@ -453,7 +454,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Ikan',
                         jalan:'Jl. Letjen S Parman No. 308, Medan',
-                        url:'item/japanese-item/makanan/DrsSushi_SabaShioYaki.html',
+                        url:'/sabsy',
                 },
                 
                 //SushiTei
@@ -466,7 +467,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Ice Cream',
                         jalan:'Jl. Kh. Zainul Arifin No. 7, Sun Plaza LG A-01',
-                        url:'item/japanese-item/makanan/SushiTei_MacaIce.html',
+                        url:'/maci',
                 },
                 {
                         tempat:"Sushi Tei",
@@ -475,7 +476,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Sushi',
                         jalan:'Jl. Kh. Zainul Arifin No. 7, Sun Plaza LG A-01',
-                        url:'item/japanese-item/makanan/SushiTei_AburiSalmonRoll.html',
+                        url:'/abusr',
                 },
                 {
                         tempat:"Sushi Tei",
@@ -484,7 +485,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Sushi',
                         jalan:'Jl. Kh. Zainul Arifin No. 7, Sun Plaza LG A-01',
-                        url:'item/japanese-item/makanan/SushiTei_CrunchyLobster.html',
+                        url:'/crul',
                 },
                 {
                         tempat:"Sushi Tei",
@@ -493,7 +494,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Ramen',
                         jalan:'Jl. Kh. Zainul Arifin No. 7, Sun Plaza LG A-01',
-                        url:'item/japanese-item/makanan/SushiTei_GrilledChicken.html',
+                        url:'/sgric',
                 },
                 {
                         tempat:"Sushi Tei",
@@ -502,7 +503,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Sushi',
                         jalan:'Jl. Kh. Zainul Arifin No. 7, Sun Plaza LG A-01',
-                        url:'item/japanese-item/makanan/SushiTei_SalmonAburi.html',
+                        url:'/sala',
                 },
                 {
                         tempat:"Sushi Tei",
@@ -511,7 +512,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Sushi',
                         jalan:'Jl. Kh. Zainul Arifin No. 7, Sun Plaza LG A-01',
-                        url:'item/japanese-item/makanan/SushiTei_TunaSalad.html',
+                        url:'/tuns',
                 },
                 
                 //Marugame Udon
@@ -523,7 +524,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Udon',
                         jalan:'Jl. Kh. Zainul Arifin No.7, Sun Plaza LG A-06,07,08',
-                        url:'item/japanese-item/makanan/MarugameUdon_NikuUdon.html',
+                        url:'/niku',
                 },
                 {
                         tempat:"Marugame Udon",
@@ -532,7 +533,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Udon',
                         jalan:'Jl. Kh. Zainul Arifin No.7, Sun Plaza LG A-06,07,08',
-                        url:'item/japanese-item/makanan/MarugameUdon_ZaruUdon.html',
+                        url:'/zaru',
                 },
                 {
                         tempat:"Marugame Udon",
@@ -541,7 +542,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Udon',
                         jalan:'Jl. Kh. Zainul Arifin No.7, Sun Plaza LG A-06,07,08',
-                        url:'item/japanese-item/makanan/MarugameUdon_ToriBaitang.html',
+                        url:'/torb',
                 },
                 {
                         tempat:"Marugame Udon",
@@ -550,7 +551,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Udon',
                         jalan:'Jl. Kh. Zainul Arifin No.7, Sun Plaza LG A-06,07,08',
-                        url:'item/japanese-item/makanan/MarugameUdon_OntamaUdon.html',
+                        url:'/ontu',
                 },
                 
                 //Renjiro kuu
@@ -562,7 +563,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Nasi',
                         jalan:'Jl. Jend. Gatot Subroto No. 30, Medan Fair Plaza 2nd Floor',
-                        url:'item/japanese-item/makanan/renjirokuu_BeefTeriyaki.html',
+                        url:'/beet',
                 },
                 {
                         tempat:"Renjiro Kuu",
@@ -571,7 +572,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Ramen',
                         jalan:'Jl. Jend. Gatot Subroto No. 30, Medan Fair Plaza 2nd Floor',
-                        url:'item/japanese-item/makanan/renjirokuu_ChickenRamen.html',
+                        url:'/chir',
                 },
                 {
                         tempat:"Renjiro Kuu",
@@ -580,7 +581,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Nasi',
                         jalan:'Jl. Jend. Gatot Subroto No. 30, Medan Fair Plaza 2nd Floor',
-                        url:'item/japanese-item/makanan/renjirokuu_kaniroll.html',
+                        url:'/kanr',
                 },
                 {
                         tempat:"Renjiro Kuu",
@@ -589,7 +590,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Japanese',
                         jenis:'Mie',
                         jalan:'Jl. Jend. Gatot Subroto No. 30, Medan Fair Plaza 2nd Floor',
-                        url:'item/japanese-item/makanan/renjirokuu_SpicyYakiRamen.html',
+                        url:'/spiyr',
                 },
                 
                 //Jittlada Thai
@@ -601,7 +602,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Thailand',
                         jenis:'Dessert',
                         jalan:'Cambridge City Square G Fl Unit G 11, Jln. S. Parman No. 217',
-                        url:'item/lain-item/makanan/jittlada_CrabCake.html',
+                        url:'/crac',
                 },
                 {
                         tempat:"Jittlada Thai Cuisine",
@@ -610,7 +611,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Thailand',
                         jenis:'Dessert',
                         jalan:'Cambridge City Square G Fl Unit G 11, Jln. S. Parman No. 217',
-                        url:'item/lain-item/makanan/jittlada_FishCake.html',
+                        url:'/fisc',
                 },
                 {
                         tempat:"Jittlada Thai Cuisine",
@@ -619,7 +620,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Thailand',
                         jenis:'Salad',
                         jalan:'Cambridge City Square G Fl Unit G 11, Jln. S. Parman No. 217',
-                        url:'item/lain-item/makanan/jittlada_PapayaSalad.html',
+                        url:'/paps',
                 },
                 {
                         tempat:"Jittlada Thai Cuisine",
@@ -628,7 +629,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Thailand',
                         jenis:'Salad',
                         jalan:'Cambridge City Square G Fl Unit G 11, Jln. S. Parman No. 217',
-                        url:'item/lain-item/makanan/jittlada_SoftShell.html',
+                        url:'/sofs',
                 },
                 {
                         tempat:"Jittlada Thai Cuisine",
@@ -637,7 +638,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Thailand',
                         jenis:'Salad',
                         jalan:'Cambridge City Square G Fl Unit G 11, Jln. S. Parman No. 217',
-                        url:'item/lain-item/makanan/jittlada_VermicelliSalad.html',
+                        url:'/vers',
                 },
                 {
                         tempat:"Jittlada Thai Cuisine",
@@ -646,7 +647,7 @@ app.controller('ctrl', function($scope,$localStorage){
                         khas:'Thailand',
                         jenis:'Salad',
                         jalan:'Cambridge City Square G Fl Unit G 11, Jln. S. Parman No. 217',
-                        url:'item/lain-item/makanan/jittlada_WingBean.html',
+                        url:'/winb',
                 },
         ];
         

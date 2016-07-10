@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<link href="picture/icon.ico" rel="icon" type="image/x-icon">
 	<title>EzFiFoMedan</title>
-	<script src="angular.js"></script>
-	<script src="ngStorage.js"></script>
-	<script src="item.js"></script>
+	<script src="./angular.js"></script>
+	<script src="./ngStorage.js"></script>
+	<script src="./item.js"></script>
 	<link rel="stylesheet" href="Homepage.css">
 </head>
 <body ng-controller="ctrl">
@@ -22,13 +22,13 @@
 					</div>
 					<div class="khas">
 						<ul class="ul1">
-							<li><a href="khas/Western.html">Western</a></li>
-							<li><a href="khas/Chinese.html">Chinese</a></li>
-							<li><a href="khas/Japanese.html">Japanese</a></li>
-							<li><a href="khas/Indonesian.html">Indonesian</a></li>
-							<li><a href="khas/Lain.html">Lain-Lain</a></li>
-							<li><a href="panduan/panduan.html" class="ubah">Panduan</a></li>
-							<li><a href="Ubah/ubah.html">Ubah</a></li>
+							<li><a href="/western">Western</a></li>
+							<li><a href="/chinese">Chinese</a></li>
+							<li><a href="/japanese">Japanese</a></li>
+							<li><a href="/indonesian">Indonesian</a></li>
+							<li><a href="/lain">Lain-Lain</a></li>
+							<li><a href="/panduan" class="ubah">Panduan</a></li>
+							<li><a href="/ubah">Ubah</a></li>
 					</div>
 				</div>
 				
@@ -43,7 +43,7 @@
 								<p class="judulkecil"><b>Easy Finding Food Medan</b></p>
 								<img src="picture/images.png" alt="" height="40">
 								<input type="search" id="searchinput" placeholder="Search..." ng-model="$storage.x">
-								<a href="search.html" target="_blank"><input ng-disabled="$storage.x == ''" ng-click="click()" class="click" type="submit" value="&#8250;" title="Search..."></a>
+								<a ng-click="click()" href="/search"><input ng-disabled="$storage.x == ''"  class="click" type="submit" value="&#8250;" title="Search..."></a>
 							</div>
 						</div>
 					

@@ -1,4 +1,5 @@
-var app = angular.module("app", ['ngStorage']);
+var app = angular.module("app", ['ngStorage']),
+	temp = "\n *AKAN SEGERA DIPROSES*";
 
 app.controller("ctrl",function($scope,$localStorage){
 	$scope.kosong = function(){
@@ -21,12 +22,19 @@ app.controller("ctrl",function($scope,$localStorage){
 					komentar:$localStorage.abc.komentar
 				});
 				$scope.kosong();
+				alert('Terima Kasih atas informasi yang sudah diberitahukan kepada kami ..');
 			}
-			alert('Terima Kasih atas informasi yang sudah diberitahukan kepada kami ..');
+		if($localStorage.kesalahan==null||$localStorage.kesalahan.length == 0){
+			temp="";
+			alert('Daftar Kesalahan Kosong Akan Ditampilkan\nTidak Ada Data yang diberikan');
+		}
+
+		alert("Sekarang terdapat "+ $localStorage.kesalahan.length + " kesalahan informasi makanan"+temp);
+			
 		}
 	$scope.tampung = [];
 	for(var i = 0; i < $localStorage.kesalahan.length; i++){
 		$scope.tampung.push(i);	
 	}
-	alert($localStorage.kesalahan.length);
+	
 })
