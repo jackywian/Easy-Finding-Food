@@ -1,0 +1,20 @@
+{
+  "name": "ezfifo",
+  "version": "1.0.0",
+  "description": "Website yang menyediakan layanan pencarian tempat makan di sekitar Medan",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "author": "",
+  "license": "ISC"
+}
